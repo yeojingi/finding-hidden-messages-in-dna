@@ -7,7 +7,7 @@ Ori로 추정되는 DNA Sequence 추적하기
 
 ### 과제 사례
 Vibrio cholerae 의 유전체에서 
-|파일명|내용|결과|데이터|
+|파일명|내용|결과|비고|
 |------|---|---|---|
 |[PatternMatching.py](https://github.com/yeojingi/finding-hidden-messages-in-dna/blob/main/week1/some-hidden-messages-are-more-surprising/PatternMatching.py)|Vibrio cholerae의 유전체에서 "CTTGATCAT" 라는 문자열이 나오는 index를 출력|60039 98409 129189 152283 152354 152411 163207 197028 200160 357976 376771 392723 532935 600085 622755 1065555|[데이터](https://github.com/yeojingi/finding-hidden-messages-in-dna/blob/main/week1/some-hidden-messages-are-more-surprising/dataset/Vibrio_cholerae.txt)|
 |[EcoliFindClumps.py](https://github.com/yeojingi/finding-hidden-messages-in-dna/blob/main/week1/some-hidden-messages-are-more-surprising/EcoliFindClumps.py) |E coli의 유전체를 길이 500의 winodw로 유전체를 sliding 하며 각 window 내에서 3회 이상 나타나는 길이 9 이상의 문자열의 갯수를 출력함| 1904|[데이터](https://github.com/yeojingi/finding-hidden-messages-in-dna/blob/main/week1/some-hidden-messages-are-more-surprising/dataset/E_coli.txt)|
