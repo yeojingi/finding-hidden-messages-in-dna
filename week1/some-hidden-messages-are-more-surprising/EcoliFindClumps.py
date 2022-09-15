@@ -21,7 +21,7 @@ def findClumps(text, k, L, t):
   
   return len(patterns)
 
-f = open("./dataset/E_coli.txt", "r")
-text = f.readline()[:-1]
-# params = list(map(int, f.readline()[:-1].split(' ')))
-print(findClumps(text, 9, 500, 3))
+# 아래 주석을 해제 하면, E coli 유전체를 통해 실습한 결과를 볼 수 있습니다.
+# f = open("./dataset/E_coli.txt", "r")
+# text = f.readline()[:-1]
+# print(findClumps(text, 9, 500, 3))

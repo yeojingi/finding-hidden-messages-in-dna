@@ -13,7 +13,6 @@ def findClumps(text, k, L, t):
   
   return list(patterns)
 
-f = open("./dataset/E_coli.txt", "r")
-text = f.readline()[:-1]
-# params = list(map(int, f.readline()[:-1].split(' ')))
-print(findClumps(text, 9, 500, 3))
+# f = open("./dataset/E_coli.txt", "r")
+# text = f.readline()[:-1]
+# print(findClumps(text, 9, 500, 3))
