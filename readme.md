@@ -1,6 +1,7 @@
 # Finding Hidden Messages
 
 ## Week 1
+![ORI](https://github.com/yeojingi/finding-hidden-messages-in-dna/blob/main/others/imgs/ori.png)
 Ori로 추정되는 DNA Sequence 추적하기  
 주어진 구간 안에서 존재하는 k 길이의 문자열의 발생 빈도를 찾는 함수를 만들고, 그것의 생물학적 의미를 스터디 함.
 
