@@ -3,8 +3,8 @@
 ## Week 1
 <p align="center"><img src="https://github.com/yeojingi/finding-hidden-messages-in-dna/blob/main/others/imgs/ori2.png" width="40%"></p>
 <!-- ![ORI](https://github.com/yeojingi/finding-hidden-messages-in-dna/blob/main/others/imgs/ori2.png){: width="40%"}  -->
-<p>Ori로 추정되는 DNA Sequence 추적하기  </p>
-<p>주어진 구간 안에서 존재하는 k 길이의 문자열의 발생 빈도를 찾는 함수를 만들고, 그것의 생물학적 의미를 스터디 함.</p>
+<p>Ori로 추정되는 DNA Sequence 추적하기  
+주어진 구간 안에서 존재하는 k 길이의 문자열의 발생 빈도를 찾는 함수를 만들고, 그것의 생물학적 의미를 스터디 함.</p>
 
 ### 과제 사례
 |파일명|내용|결과|비고|
