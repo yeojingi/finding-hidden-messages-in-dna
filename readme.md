@@ -14,7 +14,7 @@
 
 
 ## Week 2 - Frequent words with mismatches
- <p>주어진 DNA 서열만으로 ORI의 위치를 추정할 수 있을까?<br>한 지점을 기준으로 3'->5'와 5'->3' 방향으로 G, C의 개수 차이를 통해 ORI 위치를 추정했다.</p>
+ <p><b>주어진 DNA 서열만으로 ORI의 위치를 추정할 수 있을까?</b><br>한 지점을 기준으로 3'->5'와 5'->3' 방향으로 G, C의 개수 차이를 통해 ORI 위치를 추정할 수 있음을 배웠다</p>
  <p>DNA 복제 과정에서 lagging strand의 경우, 단일 가닥으로 오랜 기간 노출되어 C가 T가 되는 deamination이 될 확률이 높아짐. 따라서 단일 가닥으로 존재하는 곳에서는 C의 비율이 G의 비율보다 작음.  <br>
  이 원리를 이용하여, DNA 가닥의 출발 지점부터 현재 지점까지의 G 개수 - C 개수 의 값 (<i>skew - 비대칭</i>)을 계산하고, 최소값이 나타나는 지점에 ori가 존재할 가능성이 높다는 것을 추정할 수 있음</p>
  <p>이러한 방법론은 <a href="https://pubmed.ncbi.nlm.nih.gov/8676740/">Lobry(1996)</a>에 의해 처음 제안되고, <a href="https://pubmed.ncbi.nlm.nih.gov/18660512/">Sernova and Gelfand(2008)</a>에 의해 알고리즘화 되었다고 함.</p>
