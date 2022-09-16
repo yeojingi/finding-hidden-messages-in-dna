@@ -3,7 +3,7 @@
 ## Week 1
 <p align="center"><img src="https://github.com/yeojingi/finding-hidden-messages-in-dna/blob/main/others/imgs/ori2.png" width="40%"></p>
 <!-- ![ORI](https://github.com/yeojingi/finding-hidden-messages-in-dna/blob/main/others/imgs/ori2.png){: width="40%"}  -->
-<p>Ori로 추정되는 DNA Sequence 추적하기.      
+<p>Ori로 추정되는 DNA Sequence 추적하기. <br>
 주어진 구간 안에서 존재하는 k 길이의 문자열의 발생 빈도를 찾는 함수를 만들고, 그것의 생물학적 의미를 스터디 함.</p>
 
 ### 과제 사례
@@ -11,3 +11,17 @@
 |------|---|---|---|
 |[PatternMatching.py](https://github.com/yeojingi/finding-hidden-messages-in-dna/blob/main/week1/some-hidden-messages-are-more-surprising/PatternMatching.py)|Vibrio cholerae의 유전체에서 "CTTGATCAT" 라는 문자열이 나오는 index를 출력|60039 98409 129189 152283 152354 152411 163207 197028 200160 357976 376771 392723 532935 600085 622755 1065555|[데이터](https://github.com/yeojingi/finding-hidden-messages-in-dna/blob/main/week1/some-hidden-messages-are-more-surprising/dataset/Vibrio_cholerae.txt)|
 |[EcoliFindClumps.py](https://github.com/yeojingi/finding-hidden-messages-in-dna/blob/main/week1/some-hidden-messages-are-more-surprising/EcoliFindClumps.py) |E coli의 유전체를 길이 500의 winodw로 유전체를 sliding 하며 각 window 내에서 3회 이상 나타나는 길이 9 이상의 문자열의 갯수를 출력함| 1904|[데이터](https://github.com/yeojingi/finding-hidden-messages-in-dna/blob/main/week1/some-hidden-messages-are-more-surprising/dataset/E_coli.txt)|
+
+
+## Week 2 - Frequent words with mismatches
+ <p>DNA 미스매치를 고려하여 자주 등장하는 문자열을 탐색함.  </p>
+ <p>DNA 복제 과정에서 lagging strand의 경우, 단일 가닥으로 오랜 기간 노출되어 C가 T가 되는 deamination이 될 확률이 높아짐. 따라서 단일 가닥으로 존재하는 곳에서는 C의 비율이 G의 비율보다 작음.  <br>
+ 이 원리를 이용하여, DNA 가닥의 출발 지점부터 현재 지점까지의 G 개수 - C 개수 의 값 (<i>skew - 비대칭</i>)을 계산하고, 최소값이 나타나는 지점에 ori가 존재할 가능성이 높다는 것을 추정할 수 있음</p>
+ <p>이러한 방법론은 <a href="https://pubmed.ncbi.nlm.nih.gov/8676740/">Lobry(1996)</a>에 의해 처음 제안되고, <a href="https://pubmed.ncbi.nlm.nih.gov/18660512/">Sernova and Gelfand(2008)</a>에 의해 알고리즘화 되었다고 함.</p>
+
+### 과제 사례
+|파일명|내용|결과|비고|
+|------|---|---|---|
+|[EcoliMininumSkew.py]()|E coli 의 G, C 비대칭을 그래프로 만들고, 최저점이 찍히는 곳을 ori가 있는 곳이라고 추정함||[데이터]()|
+|[FindDnaA.py]()| Salmonella Enterica의 G, C 비대칭을 그래프로 만들고, 역시 최저점이 찍히는 곳을 ori가 있는 곳이라고 추정함||[데이터]()|
+|[FrequentWordsWithMismatchesAndReversed.py]()|주어진 문자열에서 k 길이의 substring을 찾는다. 그리고 그 substring에 d 개의 오타(mismatch, 돌연변이)를 허용하여 가장 많이 등장하는 문자열을 출력함|TTTTA TAAAA|[데이터]()|
