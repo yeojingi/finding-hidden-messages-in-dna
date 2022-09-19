@@ -31,7 +31,7 @@ def distance(Dna, pattern):
   
   return minD
 
-f = open("./data/dataset_158_9.txt", "r")
+f = open("./data/quiz.txt", "r")
 k = int(f.readline()[:-1])
 Dnas = list(f.readline()[:-1].split(' '))
 print(medianString(Dnas, k))

@@ -26,3 +26,17 @@
 |[EcoliMininumSkew.py](https://github.com/yeojingi/finding-hidden-messages-in-dna/blob/main/week2/1.3_GC_contents/EcoliMininumSkew.py)|E coli 의 G, C 비대칭을 그래프로 만들고, 최저점이 찍히는 곳을 ori가 있는 곳이라고 추정함|![E coli](https://raw.githubusercontent.com/yeojingi/finding-hidden-messages-in-dna/main/others/imgs/ecoli_GCs.png)|[데이터](https://github.com/yeojingi/finding-hidden-messages-in-dna/blob/main/week2/1.3_GC_contents/data/E_coli.txt)|
 |[FindDnaA.py](https://github.com/yeojingi/finding-hidden-messages-in-dna/blob/main/week2/1.6/FindDnaA.py)| Salmonella Enterica의 G, C 비대칭을 그래프로 만들고, 역시 최저점이 찍히는 곳을 ori가 있는 곳이라고 추정함|![Salmonella Enterica](https://raw.githubusercontent.com/yeojingi/finding-hidden-messages-in-dna/main/others/imgs/SalmonellaEnterica_GCs.png)|[데이터](https://github.com/yeojingi/finding-hidden-messages-in-dna/blob/main/week2/1.6/data/SalmonellaEnterica.txt)|
 |[FrequentWordsWithMismatches(...).py](https://github.com/yeojingi/finding-hidden-messages-in-dna/blob/main/week2/1.4/FrequentWordsWithMismatchesAndReversed.py)|주어진 문자열에서 k 길이의 substring을 찾는다. 그리고 그 substring에 d 개의 오타(mismatch, 돌연변이)를 허용하여 가장 많이 등장하는 문자열을 출력함|TTTTA TAAAA|[데이터](https://github.com/yeojingi/finding-hidden-messages-in-dna/blob/main/week2/1.4/data/dataset_9_10.txt)|
+
+## Week 3 - Frequent words with mismatches using Greedy Algorithms and Profiles
+
+<p align="center"><img src="https://raw.githubusercontent.com/yeojingi/finding-hidden-messages-in-dna/main/others/imgs/similar.png" width="40%"></p>
+<p>유전자에는 많은 돌연변이가 발생한다. 돌연변이로 인해 서로 많이 달라보이는 두 개의 서열이, 중간 지점의 서열을 찾음으로써 서로 유사하다는 것을 발견할 수도 있다.</p>
+<p>위의 그림을 보면 AgAAgAAAGGttGGG 와 cAAtAAAAcGGGGcG는 hamming distance가 8로서 먼 것을 알 수 있다. <br> 그러나 AAAAAAAAGGGGGGG라는 서열을 보면 각각의 서열이 hamming distance가 각각 4, 4 인 것을 알 수 있다.</p>
+<p>이를 통해 각 서열들의 비교로는 알 수 없는 frequent words가 존재할 수 있다는 것을 알 수 있다.</p>
+
+### 과제 사례
+|파일명|내용|결과|비고|
+|------|---|---|---|
+|[GreedyMotifSearch.py](https://github.com/yeojingi/finding-hidden-messages-in-dna/blob/main/week3/1.5/GreedyMotifSearch.py)|[Greedy motif search](https://www.mrgraeme.com/greedy-motif-search/)를 통해 서열들의 frequent words를 찾는다|||
+|[GreedyMotifSearchWithPseudoCounts.py](https://github.com/yeojingi/finding-hidden-messages-in-dna/blob/main/week3/1.6/GreedyMotifSearchWithPseudoCounts.py)|Greedy motif search에 Laplace’s Rule of Succession을 추가해서 서열들의 frequent words를 찾는다|||
+
