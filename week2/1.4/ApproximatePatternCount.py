@@ -11,7 +11,7 @@ def approximatePatternCount(text1, pattern, d):
   return count
 
 
-f = open("./data/dataset_9_6.txt", "r")
+f = open("./data/quiz.txt", "r")
 pattern = f.readline()[:-1]
 text = f.readline()[:-1]
 d = int(f.readline()[:-1])

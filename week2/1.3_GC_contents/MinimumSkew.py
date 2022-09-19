@@ -20,5 +20,8 @@ def minimumSkew(text):
 
   return indecies
 
-f = open("./data/E_coli.txt", "r")
-print(*minimumSkew(f.readline()[:-1]))
+# f = open("./data/E_coli.txt", "r")
+# print(*minimumSkew(f.readline()[:-1]))
+
+s = input()
+print(*minimumSkew(s))
