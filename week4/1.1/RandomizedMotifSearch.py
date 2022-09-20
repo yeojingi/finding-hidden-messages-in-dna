@@ -55,6 +55,7 @@ Dnas = list(f.readline()[:-1].split(' '))
 
 bestMotifs = randomizedMotifSearch(Dnas, k, t)
 for _ in range(1000):
+  print(_)
   motifs = randomizedMotifSearch(Dnas, k, t)
   if score(motifs) < score(bestMotifs):
     bestMotifs = motifs
