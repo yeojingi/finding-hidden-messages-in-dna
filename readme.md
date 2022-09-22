@@ -46,5 +46,5 @@
 
 ### 과제 사례
 |파일명|내용|결과|비고|
-|[RandomizedMotifSearch.py](https://github.com/yeojingi/finding-hidden-messages-in-dna/blob/main/week4/1.1/RandomizedMotifSearch.py)|t 개의 DNA 서열에서 임의의 위치에서 k-mer를 추출한다. 추출한 k-mer를 가지고 profile을 만들어서 각 DNA 서열에서 most probable k-mer를 추출한다. 이렇게 추출된 k-mers를 가지고 profile을 만들어 다시 most probable k-mer를 추출하는 과정을 반복한다.|||
-|[GibbsSampler.py](https://github.com/yeojingi/finding-hidden-messages-in-dna/blob/main/week4/1.3/GibbsSampler.py)|위와 같은 방법이지만, t 개의 k-mer를 모두 변경하지 않고, DNA 서열 중 한 개를 랜덤으로 뽑아 most-probable을 뽑고 profile의 score가 나아지는지 확인하며 개선했다. 이럴 경우, score가 단조 감소하여 local minimum에 빠지는 경우를 방지할 수 있다|||
+|[RandomizedMotifSearch.py](https://github.com/yeojingi/finding-hidden-messages-in-dna/blob/main/week4/1.1/RandomizedMotifSearch.py)|t 개의 DNA 서열에서 임의의 위치에서 k-mer를 추출한다. 추출한 k-mer를 가지고 profile을 만들어서 각 DNA 서열에서 most probable k-mer를 추출한다. 이렇게 추출된 k-mers를 가지고 profile을 만들어 다시 most probable k-mer를 추출하는 과정을 반복한다.||
+|[GibbsSampler.py](https://github.com/yeojingi/finding-hidden-messages-in-dna/blob/main/week4/1.3/GibbsSampler.py)|위와 같은 방법이지만, t 개의 k-mer를 모두 변경하지 않고, DNA 서열 중 한 개를 랜덤으로 뽑아 most-probable을 뽑고 profile의 score가 나아지는지 확인하며 개선했다. 이럴 경우, score가 단조 감소하여 local minimum에 빠지는 경우를 방지할 수 있다||
